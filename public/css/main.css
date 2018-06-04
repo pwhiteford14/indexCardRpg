@@ -8,7 +8,9 @@ body {
   width: 100%;
   text-align: center;
   font-size: 1.5rem;
-  color: white;
-  background-color: #c50700; }
+  color: #3c3c3c; }
+
+.hp {
+  align-self: right; }
 
 /*# sourceMappingURL=main.css.map */
