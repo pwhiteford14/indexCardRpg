@@ -1,4 +1,105 @@
 @import "utility";
 @import "title";
-@import "heart";
+@import "popup";
+
+.setChar{
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.effort{
+  width:40%;
+  margin-left: 30%;
+  padding-bottom: 9 0%;
+}
+
+.effort-result{
+  border: solid grey;
+  border-bottom: white;
+  width: 100%;
+text-align: center;
+  font-size: 1.5em;
+}
+
+.effortButton{
+  width: 100%;
+  border-bottom: solid 3px grey;
+  border-left: solid 3px grey;
+  border-right: solid 3px grey;
+
+}
+
+.hp{
+  padding-top: 20%;
+  padding-right: 0%;
+  width: 13%;
+  border: solid red;
+}
+
+.cardButton{
+  width: 100%;
+
+}
+
+.cardResult{
+  text-align:center;
+  font-size: 1.5em;
+}
+.cardDraw{
+  border: solid grey 3px;
+  width: 55%;
+  margin-left: 22.5%;
+  margin-right: 22.5%;
+  margin-top: 30%;
+}
+
+input{
+  width:100%;
+  border: solid #c4c4c4 2px;
+  margin-top: 4%;
+  height: 10%;
+  margin-bottom: 5%;
+}
+
+
+.textBox {
+  width: 20%;
+}
+
+.health{
+  width: 45%;
+  margin-left: 30%;
+  align-items: center;
+}
+.slider-wrapper {
+  display: inline-block;
+  width: 20px;
+  height: 150px;
+  padding: 0;
+}
+
+.slider-wrapper input {
+  width: 150px;
+  height: 20px;
+  margin: 0;
+  transform-origin: 75px 75px;
+  transform: rotate(-90deg);
+}
+
+
+.e{
+
+}
+.d{
+  width: 15%;
+  font-size: .8em;
+}
+
+.dice{
+  margin-left: 2.5%;
+}
+
+.ats{
+  margin-left: 2.3%;
+}
 

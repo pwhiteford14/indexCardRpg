@@ -5,14 +5,99 @@
     <meta charset="UTF-8">
     <title>Index Card RPG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/foundation.min.css">
+    <link rel="stylesheet" href="public/css/foundation.min.css">
     <link rel="stylesheet" href="public/css/main.css">
-
+    <script src="../javascripts/card.js"></script>
+    <script>onclick="clearBox('cardResult')"</script>
 </head>
 <body>
 <div class="title">Index card RPG</div>
-<div class="hp"><div class="heart"></div></div> 
+<button  class=" button setChar" id="myBtn">Open Character</button>
 
+
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="name"><input placeholder="Name"></div>
+        <div class="name"><input placeholder="Type"></div>
+        <div class=" textBox small"><input maxlength="2" class="small1" type="number" id="dext" placeholder="Dex"></div>
+        <div class=" textBox small"><input maxlength="2" class="small2" type="number" id="const" placeholder="Const"></div>
+        <div class=" textBox small"><input maxlength="2" class="small3" type="number"   id="intt"   placeholder="Int"></div>
+        <div class=" textBox small"><input maxlength="2" class="small4" type="number"   id="wisd" placeholder="Wis"></div>
+        <div class=" textBox small"><input maxlength="2" class="small5" type="number"  id="char" placeholder="Car"></div>
+
+    </div>
+
+</div>
+
+<div class="effort">
+    <div id="results" class="effort-result">20</div>
+    <a class="button effortButton" id="d20">Roll for Effort!</a>
+</div>
+
+<div class="dice">
+    <div class="button e" id="d4">d4</div>
+    <div class="button e" id="d6">d6</div>
+    <div class="button e" id="d8">d8</div>
+    <div class="button e" id="d10">d10</div>
+    <div class="button e" id="d12">d12</div>
+    <div class="button e" id="d100">d100</div>
+</div>
+
+<div class="ats">
+    <div class="button d" id="char">add cha</div>
+    <div class="button d" id="srt">add str</div>
+    <div class="button d" id="int">add int</div>
+    <div class="button d" id="wis">add wis</div>
+    <div class="button d" id="cons">add con</div>
+    <div class="button d" id="dex">add dex</div>
+</div>
+
+
+
+<div class="health">
+    <label>
+        Denizen health
+        <input type="number" value="10">
+        </label>
+    <label>
+        Your Health
+        <input type="number" value="10">
+    </label>
+</div>
+<div class="cardDraw">
+    <div class="button cardButton"  id="drawCard">Draw a card</div>
+    <div class="cardResult" onclick="clearBox('cardResult')" id="cardResult"></div>
+</div>
+
+<script>// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}</script>
 <script src="public/javascripts/main.js" type="module"></script>
+<script src="public/javascripts/card.js" type="module"></script>
 </body>
 </html>

@@ -1,8 +1,14 @@
 body {
   font-family: Arial; }
 
+.button {
+  background-color: #3aabc5; }
+
 body {
   font-family: Arial; }
+
+.button {
+  background-color: #3aabc5; }
 
 .title {
   width: 100%;
@@ -12,5 +18,132 @@ body {
 
 .hp {
   align-self: right; }
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+.colorBox {
+  background-color: #3aabc5; }
+
+.setChar {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%; }
+
+.effort {
+  width: 40%;
+  margin-left: 30%;
+  padding-bottom: 9 0%; }
+
+.effort-result {
+  border: solid grey;
+  border-bottom: white;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em; }
+
+.effortButton {
+  width: 100%;
+  border-bottom: solid 3px grey;
+  border-left: solid 3px grey;
+  border-right: solid 3px grey; }
+
+.hp {
+  padding-top: 20%;
+  padding-right: 0%;
+  width: 13%;
+  border: solid red; }
+
+.cardButton {
+  width: 100%; }
+
+.cardResult {
+  text-align: center;
+  font-size: 1.5em; }
+
+.cardDraw {
+  border: solid grey 3px;
+  width: 55%;
+  margin-left: 22.5%;
+  margin-right: 22.5%;
+  margin-top: 30%; }
+
+input {
+  width: 100%;
+  border: solid #c4c4c4 2px;
+  margin-top: 4%;
+  height: 10%;
+  margin-bottom: 5%; }
+
+.textBox {
+  width: 20%; }
+
+.health {
+  width: 45%;
+  margin-left: 30%;
+  align-items: center; }
+
+.slider-wrapper {
+  display: inline-block;
+  width: 20px;
+  height: 150px;
+  padding: 0; }
+
+.slider-wrapper input {
+  width: 150px;
+  height: 20px;
+  margin: 0;
+  transform-origin: 75px 75px;
+  transform: rotate(-90deg); }
+
+.d {
+  width: 15%;
+  font-size: .8em; }
+
+.dice {
+  margin-left: 2.5%; }
+
+.ats {
+  margin-left: 2.3%; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,10 @@
 
- $baseRed: rgb(197, 7, 0);
+ $baseButtoncolor: rgb(58, 171, 197);
 
 body{
   font-family: Arial;
 }
 
+.button{
+  background-color: $baseButtoncolor;
+}

@@ -4,6 +4,7 @@
   "description": "this is a template",
   "main": "app.js",
   "dependencies": {
+    "card-deck": "^1.0.0",
     "eslint": "^4.19.1"
   },
   "devDependencies": {},
